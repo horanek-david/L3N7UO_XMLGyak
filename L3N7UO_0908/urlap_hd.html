@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	  <meta charset="utf-8">
+	  <title>My Page Title</title>
+	  <meta name="description" content="My Page Description">
+	</head>
+	<body style="background:#b3ff66">
+		<form action="feldolgozo.php" method="post">
+			<h2 style="text-align:center">Űrlap kitöltése</h2>
+				<table style="width:350px; border:1px solid black;margin-left:auto;margin-right:auto; margin-top:20px; padding:10px; background:#a6ff4d">
+				  <tr>
+					<td>Név:</td>
+					<td><input style="width:80%" type="text" name="nev" value="" placeholder="Írd be a neved"></td>
+				  </tr>
+				  <tr>
+					<td>PIN kód:</td>
+					<td><input style="width:80%" type="password" name="kod" value="" placeholder="Írd be a PIN kódot"></td>
+				  </tr>
+				  <tr>
+					<td>Gyümölcs:</td>
+					<td><input style="width:80%" type="text" name="gyumolcs" value="" placeholder="Írd be a kedvenc gyümölcsöd"></td>
+				  </tr>
+				  <tr>
+					<td>Életkor:</td>
+					<td><input style="width:80%" type="number" name="eletkor" value="" placeholder="Add meg az életkorod"></td>
+				  </tr>
+				  <tr>
+					<td>Lábméret:</td>
+					<td><input style="width:80%" type="number" name="labmeret" value="" placeholder="Add meg a lábméreted"></td>
+				  </tr>
+				  <tr>
+					<td>Önbizalom:</td>
+					<td>
+						<input type="range" name="onbizalom" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value"> 
+						<output>50</output>
+					</td>
+				  </tr>
+				  <tr>
+					<td><input type="submit" name="kuldes" value="Küldés"></td>
+					<td></td>
+				  </tr>
+				</table>  
+		</form>
+	</body>
+</html>

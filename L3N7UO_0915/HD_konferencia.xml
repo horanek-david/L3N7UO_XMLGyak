@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<konferencia>
+	<cim>Adatkezelés hallgatóknak</cim>
+	<hallgatok>
+		<hallgato id="1">
+			<nev>Kis Béla</nev>
+			<lakcim>Budapest</lakcim>
+		</hallgato>
+		<hallgato id="2">
+			<nev>Nagy Géza</nev>
+			<lakcim>Zalaegerszeg</lakcim>
+		</hallgato>
+	</hallgatok>
+	<helyszin>Miskolc</helyszin>
+	<eloado>
+		<nev>Dr. Doktor</nev>
+		<adoszam>123-456</adoszam>
+		<lakcim>Debrecen</lakcim>
+	</eloado>
+	<datum>2021.09.22</datum>
+</konferencia>

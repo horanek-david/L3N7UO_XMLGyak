@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<orarend>
+	<ora id="1" tipus="Előadás">
+		<targy>Algoritmusok és vizsgálatuk</targy>
+		<idopont>
+			<nap>Hétfő</nap>
+			<tol>08:00</tol>
+			<ig>10:00</ig>
+		</idopont>
+		<helyszin>XII A3 III. em. 313</helyszin>
+		<oktato>Dr. Házy Attila</oktato>
+		<szak>Programtervező Informatikus</szak>
+	</ora>
+	<ora id="2" tipus="Gyakorlat">
+		<targy>Algoritmusok és vizsgálatuk</targy>
+		<idopont>
+			<nap>Hétfő</nap>
+			<tol>10:00</tol>
+			<ig>12:00</ig>
+		</idopont>
+		<helyszin>XII A3 III. em. 313</helyszin>
+		<oktato>Dr. Házy Attila</oktato>
+		<szak>Programtervező Informatikus</szak>
+	</ora>
+	<ora id="3" tipus="Előadás">
+		<targy>Web technológiák 1.</targy>
+		<idopont>
+			<nap>Hétfő</nap>
+			<tol>12:00</tol>
+			<ig>14:00</ig>
+		</idopont>
+		<helyszin>XXX A1 III. em. 305</helyszin>
+		<oktato>Agárdi Anita</oktato>
+		<szak>Programtervező Informatikus</szak>
+	</ora>
+	<ora id="4" tipus="Előadás">
+		<targy>Lineáris Algebra numerikus módszerei</targy>
+		<idopont>
+			<nap>Hétfő</nap>
+			<tol>12:00</tol>
+			<ig>14:00</ig>
+		</idopont>
+		<helyszin>XII A3 III. em. 313</helyszin>
+		<oktato>Dr. Karácsony Zsolt</oktato>
+		<szak>Programtervező Informatikus</szak>
+	</ora>
+	<ora id="5" tipus="Előadás">
+		<targy>Mesterséges intelligencia alapok</targy>
+		<idopont>
+			<nap>Hétfő</nap>
+			<tol>14:00</tol>
+			<ig>17:00</ig>
+		</idopont>
+		<helyszin>XXXII A1 magasfsz</helyszin>
+		<oktato>Dr. Dudás László</oktato>
+		<szak>Programtervező informatikus</szak>
+	</ora>
+	<ora id="6" tipus="Gyakorlat">
+		<targy>Lineáris Algebra numerikus módszerei</targy>
+		<idopont>
+			<nap>Kedd</nap>
+			<tol>08:00</tol>
+			<ig>10:00</ig>
+		</idopont>
+		<helyszin>A1/202 A1 II. em. 202</helyszin>
+		<oktato>Dr. Karácsony Zsolt</oktato>
+		<szak>Programtervező Informatikus</szak>
+	</ora>
+	<ora id="7" tipus="Előadás">
+		<targy>Adatkezelés XML-ben</targy>
+		<idopont>
+			<nap>Kedd</nap>
+			<tol>12:00</tol>
+			<ig>14:00</ig>
+		</idopont>
+		<helyszin>I A2 fsz</helyszin>
+		<oktato>Bednarik László</oktato>
+		<szak>Programtervező Informatikus</szak>
+	</ora>
+	<ora id="8" tipus="Gyakorlat">
+		<targy>Web technológiák 1.</targy>
+		<idopont>
+			<nap>Kedd</nap>
+			<tol>18:00</tol>
+			<ig>20:00</ig>
+		</idopont>
+		<helyszin>In/103 In I. em. 103</helyszin>
+		<oktato>Agárdi Anita</oktato>
+		<szak>Programtervező Informatikus</szak>
+	</ora>	
+	<ora id="9" tipus="Gyakorlat">
+		<targy>Mesterséges intelligencia alapok</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>09:00</tol>
+			<ig>10:00</ig>
+		</idopont>
+		<helyszin>In/15 In. fsz 15</helyszin>
+		<oktato>Dr. Dudás László</oktato>
+		<szak>Programtervező Informatikus</szak>
+	</ora>	
+	<ora id="10" tipus="Gyakorlat">
+		<targy>Adatkezelés XML-ben</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>10:00</tol>
+			<ig>12:00</ig>
+		</idopont>
+		<helyszin>In/202 In II. em. 202</helyszin>
+		<oktato>Bednarik László</oktato>
+		<szak>Programtervező Informatikus</szak>
+	</ora>	
+	<ora id="11" tipus="Előadás">
+		<targy>Vállalati információs rendszerek fejlesztése</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>16:00</tol>
+			<ig>18:00</ig>
+		</idopont>
+		<helyszin>In/103 In I. em. 103</helyszin>
+		<oktato>Dr. Sasvári Péter László</oktato>
+		<szak>Programtervező Informatikus</szak>
+	</ora>
+	<ora id="12" tipus="Gyakorlat">
+		<targy>Vállalati információs rendszerek fejlesztése</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>18:00</tol>
+			<ig>20:00</ig>
+		</idopont>
+		<helyszin>In/103 In I. em. 103</helyszin>
+		<oktato>Dr. Sasvári Péter László</oktato>
+		<szak>Programtervező Informatikus</szak>
+	</ora>
+	<ora id="13" tipus="Gyakorlat">
+		<targy>Szakmai gyakorlat</targy>
+		<idopont>
+			<nap>-</nap>
+			<tol>-</tol>
+			<ig>-</ig>
+		</idopont>
+		<helyszin>-</helyszin>
+		<oktato>Dr. Földvári Attila József</oktato>
+		<szak>Programtervező Informatikus</szak>
+	</ora>
+	<ora id="14" tipus="Gyakorlat">
+		<targy>Idegen nyelv felmentett 1.</targy>
+		<idopont>
+			<nap>-</nap>
+			<tol>-</tol>
+			<ig>-</ig>
+		</idopont>
+		<helyszin>-</helyszin>
+		<oktato>-</oktato>
+		<szak>Programtervező Informatikus</szak>
+	</ora>
+</orarend>

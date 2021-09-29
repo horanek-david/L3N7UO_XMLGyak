@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE konyvek SYSTEM "HD_konyv.dtd">
+
+<konyvek>
+	<konyv id="01">
+		<cim>A kis nyúl</cim>
+		<kiadasiev>1996</kiadasiev>
+		<kiado>Pesti kiadó</kiado>
+		<szerzo>Kis Géza</szerzo>
+		<szerzo>Nagy Endre</szerzo>
+		<absztrakt></absztrakt>
+	</konyv>
+	<konyv id="02">
+		<cim>Sárga Madár</cim>
+		<kiadasiev>2012</kiadasiev>
+		<kiado>Pesti kiadó</kiado>
+		<szerzo>Barna Péter</szerzo>
+		<absztrakt></absztrakt>
+	</konyv>
+	<konyv id="03">
+		<cim>Az ember</cim>
+		<kiadasiev>1878</kiadasiev>
+		<kiado>Kis kiadó</kiado>
+		<szerzo>Fekete Andrea</szerzo>
+		<absztrakt></absztrakt>
+	</konyv>
+</konyvek>

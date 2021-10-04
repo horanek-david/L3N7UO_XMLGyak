@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
-<!DOCTYPE konyvek [
-	<!ELEMENT konyvek (konyv)>
-		<!ELEMENT konyv (cim, kiadasiev, kiado, szerzo+, absztrakt*)>
+	<!ELEMENT konyvek (konyv+)>
+		<!ELEMENT konyv (cim, kiadasiev, kiado, szerzo+, absztrakt?)>
 			<!ELEMENT cim (#PCDATA)>
 			<!ELEMENT kiadasiev (#PCDATA)>
 			<!ELEMENT kiado (#PCDATA)>
 			<!ELEMENT szerzo (#PCDATA)>
-			<!ELEMENT absztrakt #IMPLIED>
-			<!ATTLIST konyvek id ID #REQUIRED>
-]>
+			<!ELEMENT absztrakt (#PCDATA)>
+			<!ATTLIST konyv id ID #REQUIRED>

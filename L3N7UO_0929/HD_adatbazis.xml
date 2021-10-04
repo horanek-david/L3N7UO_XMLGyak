@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE adatbazis SYSTEM "HD_adatbazis.dtd">
+
+<adatbazis>
+	<dolgozo kod="A1">
+		<nev>Kis Miklós</nev>
+		<fizetes>20000</fizetes>
+	</dolgozo>
+	<dolgozo kod="A2">
+		<nev>Nagy Barbara</nev>
+		<fizetes>1000001</fizetes>
+	</dolgozo>
+	<dolgozo kod="A3">
+		<nev>Pénzes Henrik</nev>
+		<fizetes>1000000</fizetes>
+	</dolgozo>
+</adatbazis>

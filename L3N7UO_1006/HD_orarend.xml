@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE orarend>
 
+<orarend xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="HD_orarend.xsd">
 
-<orarend>
+<!-- <orarend> -->
+
 	<ora id="A1" tipus="Előadás">
 		<targy>Algoritmusok és vizsgálatuk</targy>
 		<idopont>

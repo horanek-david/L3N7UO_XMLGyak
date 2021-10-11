@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="document">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="A" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Ab">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Abx" type="xs:string"/>
+										<xs:element name="Aby" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Ac">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Acd" type="xs:string"/>
+										<xs:element name="Ace" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="Aa" type="xs:int" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="B" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Bb">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Bbx" type="xs:string"/>
+										<xs:element name="Bby" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="Ba" type="xs:int" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="C">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Cb" type="xs:string"/>
+						</xs:sequence>
+						<xs:attribute name="Ca" type="xs:int" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="A_B">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="A_Bc" type="xs:string"/>
+						</xs:sequence>
+						<xs:attribute name="A_B_a" type="xs:int" use="required"/>
+						<xs:attribute name="A_B_b" type="xs:int" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				
+			</xs:sequence>
+		</xs:complexType>
+		
+		<xs:key name="K1">
+			<xs:selector xpath="A"/>
+			<xs:field xpath="@Aa"/>
+		</xs:key>
+		
+		<xs:key name="K2">
+			<xs:selector xpath="B"/>
+			<xs:field xpath="@Ba"/>
+		</xs:key>
+		
+		<xs:keyref name="K12" refer="K1">
+			<xs:selector xpath="A_B"></xs:selector>
+			<xs:field xpath="A_Bc"></xs:field>
+		</xs:keyref>
+		
+	</xs:element>
+</xs:schema>

@@ -4,25 +4,25 @@
 
 <konyvek>
 	<konyv id="A1">
-		<cim>A kis nyúl</cim>
-		<kiadasiev>1996</kiadasiev>
-		<kiado>Pesti kiadó</kiado>
-		<szerzo>Kis Géza</szerzo>
-		<szerzo>Nagy Endre</szerzo>
-		<absztrakt/>
+		<cim>Szövegbányászat és mesterséges intelligencia R-ben.</cim>
+		<kiadasiev>2021</kiadasiev>
+		<kiado>Typotex elektronikus kiadó kft.</kiado>
+		<szerzo>Máté Ákos</szerzo>
+		<szerzo>Ring Orsolya</szerzo>
+		<absztrakt>Könyvünk bevezeti az érdeklődőket a szövegbányászat és a mesterséges intelligencia társadalomtudományi alkalmazásának speciális problémáiba.</absztrakt>
 	</konyv>
 	<konyv id="A2">
-		<cim>Sárga Madár</cim>
+		<cim>Adatbázis tervezés</cim>
 		<kiadasiev>2012</kiadasiev>
-		<kiado>Pesti kiadó</kiado>
-		<szerzo>Barna Péter</szerzo>
-		<absztrakt>a</absztrakt>
+		<kiado>Kiskapu</kiado>
+		<szerzo>Michael J. Hernandez</szerzo>
+		<absztrakt></absztrakt>
 	</konyv>
 	<konyv id="A3">
-		<cim>Az ember</cim>
-		<kiadasiev>1878</kiadasiev>
-		<kiado>Kis kiadó</kiado>
-		<szerzo>Fekete Andrea</szerzo>
-		<absztrakt>a</absztrakt>
+		<cim>Szoftverfejlesztés okosan Pythonnal - Agilis csapatok közös nyelve.</cim>
+		<kiadasiev>2020</kiadasiev>
+		<kiado>Taramix kiadó kft.</kiado>
+		<szerzo>Dr. Kuta Gábor</szerzo>
+		<absztrakt>A Python nemcsak népszerű és modern programozási nyelv, hanem könnyen tanulható és hatékony eszköz is.</absztrakt>
 	</konyv>
 </konyvek>

@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<konyvek>
+<!DOCTYPE konyvek>
+
+<konyvek xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="HD_konyv1.xsd">
 	
-	<konyv isbn="">
-		<cim></cim>
-		<szerzo></szerzo>
+	<konyv isbn="72472834">
+		<cim>A sárga vár</cim>
+		<szerzo>Barna Miklós</szerzo>
 		<szereplo>
-			<nev></nev>
-			<baratja></baratja>
-			<szuletett></szuletett>
-			<jellemzes></jellemzes>
+			<nev>Kis János</nev>
+			<baratja>Tömzsi Péter</baratja>
+			<szuletett>1890</szuletett>
+			<jellemzes>A főhős</jellemzes>
 		</szereplo>
 		
 		<szereplo>
-			<nev></nev>
-			<szuletett></szuletett>
-			<jellemzes></jellemzes>
+			<nev>II. Sándor</nev>
+			<szuletett>1870</szuletett>
+			<jellemzes>A gonosz király</jellemzes>
 		</szereplo>
 	</konyv>
 	

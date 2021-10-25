@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE macskak>
+
+<macskak xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="macskakL3N7UO.xsd">
+
+	<macska id="A1">
+		<nev>Cirmi</nev>
+		<kor>4</kor>
+		<fajta>Bengáli</fajta>
+	</macska>
+	
+	<macska id="A2">
+		<nev>Füge</nev>
+		<kor>8</kor>
+		<fajta>Perzsa</fajta>
+	</macska>
+	
+	<macska id="A3">
+		<nev>Kormi</nev>
+		<kor>6</kor>
+		<fajta>Szfinx</fajta>
+	</macska>
+	
+</macskak>

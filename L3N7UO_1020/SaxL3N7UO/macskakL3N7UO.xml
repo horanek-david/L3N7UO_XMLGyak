@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!DOCTYPE macskak>
 
-<macskak xmlns:xsi="http://www.w3.org/2001/XMLSchema">
+<macskak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="macskakL3N7UO.xsd">
 
 	<macska id="A1">
 		<nev>Cirmi</nev>

@@ -1,39 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!DOCTYPE nevjegykartyak>
+<nevjegykartyak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="HD_nevjegykartya.xsd">
 
-<nevjegykartyak xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="HD_nevjegykartya.xsd">
-
-	<nev id="1">Horanek Dávid</nev>
-	<ceg>
-		<nev>Programozz velünk kft.</nev>
-		<cim>
-			<iranyitoszam>3360</iranyitoszam>
-			<varos>Heves</varos>
-			<utca>Kis utca</utca>
-			<hazszam>33</hazszam>
-		</cim>
-		<telefonszam>06307775555</telefonszam>
-		<weblap>www.programozz.hu</weblap>
-	</ceg>
-	<beosztas>Fejlesztő</beosztas>
-	<telefonszam>06308747594</telefonszam>
-	<email>horanek.david@outlook.com</email>
+	<nevjegykartya id="1">
+		<nev>Horanek Dávid</nev>
+		<ceg>
+			<nev>Programozz velünk kft.</nev>
+			<cim>
+				<iranyitoszam>3360</iranyitoszam>
+				<varos>Heves</varos>
+				<utca>Kis utca</utca>
+				<hazszam>33</hazszam>
+			</cim>
+			<telefonszam>06307775555</telefonszam>
+			<weblap>www.programozz.hu</weblap>
+		</ceg>
+		<beosztas>Fejlesztő</beosztas>
+		<telefonszam>06308747594</telefonszam>
+		<email>horanek.david@outlook.com</email>	
+	</nevjegykartya>
 	
-	<nev id="1">Ötvös Ádám</nev>
-	<ceg>
-		<nev>Programozz velünk kft.</nev>
-		<cim>
-			<iranyitoszam>3360</iranyitoszam>
-			<varos>Heves</varos>
-			<utca>Nagy utca</utca>
-			<hazszam>36</hazszam>
-		</cim>
-		<telefonszam>06307775555</telefonszam>
-		<weblap>www.programozz.hu</weblap>
-	</ceg>
-	<beosztas>Vezérigazgató</beosztas>
-	<telefonszam>06306543783</telefonszam>
-	<email>ötvös.ádám.balázs@gmail.com</email>
+	<nevjegykartya id="2">
+		<nev>Ötvös Ádám</nev>
+		<ceg>
+			<nev>Programozz velünk kft.</nev>
+			<cim>
+				<iranyitoszam>3360</iranyitoszam>
+				<varos>Heves</varos>
+				<utca>Nagy utca</utca>
+				<hazszam>36</hazszam>
+			</cim>
+			<telefonszam>06307775555</telefonszam>
+			<weblap>www.programozz.hu</weblap>
+		</ceg>
+		<beosztas>Vezérigazgató</beosztas>
+		<telefonszam>06306543783</telefonszam>
+		<email>ötvös.ádám.balázs@gmail.com</email>
+	</nevjegykartya>
 	
 </nevjegykartyak>

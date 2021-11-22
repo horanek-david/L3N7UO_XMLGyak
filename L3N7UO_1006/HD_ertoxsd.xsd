@@ -7,7 +7,7 @@
 				<xs:element name="A" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element name="Ab">
+							<xs:element name="Ab" maxOccurs="unbounded">
 								<xs:complexType>
 									<xs:sequence>
 										<xs:element name="Abx" type="xs:string"/>
@@ -41,6 +41,7 @@
 							</xs:element>
 						</xs:sequence>
 						<xs:attribute name="Ba" type="xs:int" use="required"/>
+						<xs:attribute name="Bc" type="xs:int" use="required"/>
 					</xs:complexType>
 				</xs:element>
 				
@@ -52,6 +53,7 @@
 						<xs:attribute name="Ca" type="xs:int" use="required"/>
 					</xs:complexType>
 				</xs:element>
+				
 				<xs:element name="A_B">
 					<xs:complexType>
 						<xs:sequence>
@@ -75,9 +77,14 @@
 			<xs:field xpath="@Ba"/>
 		</xs:key>
 		
-		<xs:keyref name="K12" refer="K1">
+		<xs:keyref refer="K1" name="K11">
 			<xs:selector xpath="A_B"></xs:selector>
-			<xs:field xpath="A_Bc"></xs:field>
+			<xs:field xpath="@A_Bc"></xs:field>
+		</xs:keyref>
+		
+		<xs:keyref refer="K2" name="K21">
+			<xs:selector xpath="A_B"></xs:selector>
+			<xs:field xpath="@A_Bc"></xs:field>
 		</xs:keyref>
 		
 	</xs:element>

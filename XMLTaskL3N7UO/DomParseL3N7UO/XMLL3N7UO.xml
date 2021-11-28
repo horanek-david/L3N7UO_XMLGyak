@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaL3N7UO.xsd">
+
+	<!-- ER modell merkozes-jatekvezeto része(bal oldal) -->
+	<merkozes mkod="M01">
+		<idopont>2022-06-23</idopont>
+		<helyszin>
+			<orszag>Oroszország</orszag>
+			<varos>Moszkva</varos>
+		</helyszin>
+		<szabalytalansagok>
+			<szabalytalansag mkod="M01">
+				<idopont>37</idopont>
+				<lap>Sarga</lap>
+			</szabalytalansag>
+			
+			<szabalytalansag mkod="M01">
+				<idopont>65</idopont>
+				<lap>Piros</lap>
+			</szabalytalansag>
+		</szabalytalansagok>
+	</merkozes>
+	
+	<jatekvezetok>
+		<jatekvezeto jkod="B01">
+			<nev>Smith Jhon</nev>
+			<orszag>Anglia</orszag>
+		</jatekvezeto>
+		<jatekvezeto jkod="B02">
+			<nev>Dany Lewis</nev>
+			<orszag>Skócia</orszag>
+		</jatekvezeto>
+		<jatekvezeto jkod="B03">
+			<nev>Big Pete</nev>
+			<orszag>Anglia</orszag>
+		</jatekvezeto>
+	</jatekvezetok>
+	
+	<birok>
+		<biro mkod="M01" jkod="B01">
+			<birotipus>Jatekvezeto</birotipus>
+		</biro>
+		<biro mkod="M01" jkod="B02">
+			<birotipus>Partjelzo</birotipus>
+		</biro>
+		<biro mkod="M01" jkod="B03">
+			<birotipus>Videobiro</birotipus>
+		</biro>
+	</birok>
+
+
+	<!-- ER modell jatekos-csapat része(jobb oldal) -->
+	<jatekosok>
+		<jatekos jkod="J01">
+			<nev>Karim Benzema</nev>
+			<orszag>Franciaország</orszag>
+			<pozicio>Tamado</pozicio>
+			<jatekosigazolvany>ABC123</jatekosigazolvany>
+		</jatekos>
+		<jatekos jkod="J02">
+			<nev>Toni Kroos</nev>
+			<orszag>Németország</orszag>
+			<pozicio>Kozeppalyas</pozicio>
+			<jatekosigazolvany>ABC456</jatekosigazolvany>
+		</jatekos>
+		<jatekos jkod="J03">
+			<nev>Thibaut Courtois</nev>
+			<orszag>Belgium</orszag>
+			<pozicio>Kapus</pozicio>
+			<jatekosigazolvany>ABC789</jatekosigazolvany>
+		</jatekos>
+		<jatekos jkod="J04">
+			<nev>Robert Lewandowski</nev>
+			<orszag>Lengyelország</orszag>
+			<pozicio>Tamado</pozicio>
+			<jatekosigazolvany>CBA123</jatekosigazolvany>
+		</jatekos>
+		<jatekos jkod="J05">
+			<nev>Leon Goretzka</nev>
+			<orszag>Németország</orszag>
+			<pozicio>Kozeppalyas</pozicio>
+			<jatekosigazolvany>CBA456</jatekosigazolvany>
+		</jatekos>
+		<jatekos jkod="J06">
+			<nev>Manuel Neuer</nev>
+			<orszag>Németország</orszag>
+			<pozicio>Kapus</pozicio>
+			<jatekosigazolvany>CBA789</jatekosigazolvany>
+		</jatekos>
+	</jatekosok>
+	
+	<csapatok>
+		<csapat cskod="CS01">
+			<nev>Real Madrid</nev>
+			<orszag>Spanyolország</orszag>
+		</csapat>
+		<csapat cskod="CS02">
+			<nev>Bayern München</nev>
+			<orszag>Németország</orszag>
+		</csapat>
+	</csapatok>
+	
+	<cs-js>
+		<cs-j jkod="J01" cskod="CS01"/>
+		<cs-j jkod="J02" cskod="CS01"/>
+		<cs-j jkod="J03" cskod="CS01"/>
+		<cs-j jkod="J04" cskod="CS02"/>
+		<cs-j jkod="J05" cskod="CS02"/>
+		<cs-j jkod="J06" cskod="CS02"/>
+	</cs-js>
+	
+	<!-- ER modell resztvevo része(kozep) -->
+	<donto dkod="D01">
+		<orszag>Oroszország</orszag>
+		<stadion>Saint Petersburg Stadium</stadion>
+	</donto>
+	
+	<resztvesz rkod="R01" mkod="M01" dkod="D01">
+		<nezoszam>10000000</nezoszam>
+	</resztvesz>
+	
+	<r-css>
+		<r-cs rkod="R01" cskod="CS01">
+			<gol>5</gol>
+		</r-cs>
+		<r-cs rkod="R01" cskod="CS02">
+			<gol>3</gol>
+		</r-cs>	
+	</r-css>
+	
+	
+</document>

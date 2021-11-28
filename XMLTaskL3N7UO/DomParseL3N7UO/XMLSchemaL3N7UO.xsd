@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+	<!-- XML fő részei saját típussal -->
+	<xs:element name="document">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="merkozes" type="merkozesTipus"/>
+				<xs:element name="jatekvezetok" type="jatekvezetokTipus"/>
+				<xs:element name="birok" type="birokTipus"/>
+				<xs:element name="jatekosok" type="jatekosokTipus"/>
+				<xs:element name="csapatok" type="csapatokTipus"/>
+				<xs:element name="cs-js" type="cs-jsTipus"/>
+				<xs:element name="donto" type="dontoTipus"/>
+				<xs:element name="resztvesz" type="resztveszTipus"/>
+				<xs:element name="r-css" type="r-cssTipus"/>
+			</xs:sequence>
+		</xs:complexType>	
+		<!-- Merkozes-Jatekvezeto megszoritas -->
+		<xs:key name="keyMerkozes">
+			<xs:selector xpath="merkozes"/>
+			<xs:field xpath="@mkod"/>
+		</xs:key>
+		<xs:key name="keyJatekvezeto">
+			<xs:selector xpath="jatekvezetok/jatekvezeto"/>
+			<xs:field xpath="@jkod"/>
+		</xs:key>
+		
+		<xs:keyref name="keyrefBiro1" refer="keyMerkozes">
+			<xs:selector xpath="birok/biro"/>
+			<xs:field xpath="@mkod"/>
+		</xs:keyref>
+		<xs:keyref name="keyrefBiro2" refer="keyJatekvezeto">
+			<xs:selector xpath="birok/biro"/>
+			<xs:field xpath="@jkod"/>
+		</xs:keyref>
+		
+		<!-- Jatekos-Csapat megszoritas -->
+		<xs:key name="keyJatekos">
+			<xs:selector xpath="jatekosok/jatekos"/>
+			<xs:field xpath="@jkod"/>
+		</xs:key>
+		<xs:key name="keyCsapat">
+			<xs:selector xpath="csapatok/csapat"/>
+			<xs:field xpath="@cskod"/>
+		</xs:key>
+		
+		<xs:keyref name="keyrefCS-J1" refer="keyJatekos">
+			<xs:selector xpath="cs-js/cs-j"/>
+			<xs:field xpath="@jkod"/>
+		</xs:keyref>
+		<xs:keyref name="keyrefCS-J2" refer="keyCsapat">
+			<xs:selector xpath="cs-js/cs-j"/>
+			<xs:field xpath="@cskod"/>
+		</xs:keyref>
+		
+		<!-- Donto-Resztvesz(Merkozes) megszoritas-->
+		<xs:key name="keyDonto">
+			<xs:selector xpath="donto"/>
+			<xs:field xpath="@dkod"/>
+		</xs:key>
+		<xs:key name="keyResztvesz">
+			<xs:selector xpath="resztvesz"/>
+			<xs:field xpath="@rkod"/>
+		</xs:key>
+		
+		<xs:keyref name="keyrefResztvesz1" refer="keyMerkozes">
+			<xs:selector xpath="resztvesz"/>
+			<xs:field xpath="@mkod"/>
+		</xs:keyref>
+		<xs:keyref name="keyrefResztvesz2" refer="keyDonto">
+			<xs:selector xpath="resztvesz"/>
+			<xs:field xpath="@dkod"/>
+		</xs:keyref>
+		
+		<!-- Golok megszoritas -->
+		<xs:keyref name="keyrefR-CS1" refer="keyResztvesz">
+			<xs:selector xpath="r-css/r-cs"/>
+			<xs:field xpath="@rkod"/>
+		</xs:keyref>
+		<xs:keyref name="keyrefR-CS2" refer="keyCsapat">
+			<xs:selector xpath="r-css/r-cs"/>
+			<xs:field xpath="@cskod"/>
+		</xs:keyref>
+			
+	</xs:element>
+	
+	<!-- merkozes tipus -->
+	<xs:complexType name="merkozesTipus">
+		<xs:sequence>
+			<xs:element name="idopont" type="xs:date"/>
+			<xs:element name="helyszin" type="helyszinTipus"/>
+			<xs:element name="szabalytalansagok" type="szabalytalansagokTipus"/>
+		</xs:sequence>
+		<xs:attribute name="mkod" type="xs:string" use="required"/>
+	</xs:complexType>
+
+	<!-- helyszinTipus -->
+	<xs:complexType name="helyszinTipus">
+		<xs:sequence>
+			<xs:element name="orszag" type="xs:string"/>
+			<xs:element name="varos" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<!-- szabalytalansag tipus -->
+	<xs:complexType name="szabalytalansagokTipus">
+		<xs:sequence>
+			<xs:element name="szabalytalansag" type="szabalytalansagTipus" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="szabalytalansagTipus">
+		<xs:sequence>
+			<xs:element name="idopont" type="xs:int"/>
+			<xs:element name="lap" type="lapTipus"/>
+		</xs:sequence>
+		<xs:attribute name="mkod" type="xs:string" use="required"/>
+	</xs:complexType>
+	
+		<!-- lap tipus -->
+	<xs:simpleType name="lapTipus">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Sarga"/>
+			<xs:enumeration value="Piros"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- jatekvezetok-merkozes kapcsolat -->
+	<xs:complexType name="jatekvezetokTipus">
+		<xs:sequence>
+			<xs:element name="jatekvezeto" type="jatekvezetoTipus" minOccurs="1" maxOccurs="5"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- jatekvezeto tipus -->	
+	<xs:complexType name="jatekvezetoTipus">
+		<xs:sequence>
+			<xs:element name="nev" type="xs:string"/>
+			<xs:element name="orszag" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="jkod" type="xs:string" use="required"/>
+	</xs:complexType>
+	
+	<xs:complexType name="birokTipus">
+		<xs:sequence>
+			<xs:element name="biro" type="biroTipus" minOccurs="1" maxOccurs="5"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="biroTipus">
+		<xs:sequence>
+			<xs:element name="birotipus" type="birotipusTipus"/>
+		</xs:sequence>
+		<xs:attribute name="mkod" type="xs:string" use="required"/>
+		<xs:attribute name="jkod" type="xs:string" use="required"/>
+	</xs:complexType>
+	
+	<xs:simpleType name="birotipusTipus">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Jatekvezeto"/>
+			<xs:enumeration value="Partjelzo"/>
+			<xs:enumeration value="Videobiro"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:complexType name="jatekosokTipus">
+		<xs:sequence>
+			<xs:element name="jatekos" type="jatekosTipus" minOccurs="2" maxOccurs="22"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="jatekosTipus">
+		<xs:sequence>
+			<xs:element name="nev" type="xs:string"/>
+			<xs:element name="orszag" type="xs:string"/>
+			<xs:element name="pozicio" type="pozicioTipus"/>
+			<xs:element name="jatekosigazolvany">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="jkod" type="xs:string" use="required"/>
+	</xs:complexType>
+	
+	<xs:simpleType name="pozicioTipus">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Tamado"/>
+			<xs:enumeration value="Kozeppalyas"/>
+			<xs:enumeration value="Kapus"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:complexType name="csapatokTipus">
+		<xs:sequence>
+			<xs:element name="csapat" type="csapatTipus" minOccurs="2" maxOccurs="2"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="csapatTipus">
+		<xs:sequence>
+			<xs:element name="nev" type="xs:string"/>
+			<xs:element name="orszag" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="cskod" type="xs:string" use="required"/>
+	</xs:complexType>
+	
+	<xs:complexType name="cs-jsTipus">
+		<xs:sequence>
+			<xs:element name="cs-j" type="cs-jTipus" minOccurs="2" maxOccurs="22"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="cs-jTipus">
+		<xs:attribute name="jkod" type="xs:string" use="required"/>
+		<xs:attribute name="cskod" type="xs:string" use="required"/>
+	</xs:complexType>
+	
+	<xs:complexType name="dontoTipus">
+		<xs:sequence>
+			<xs:element name="orszag" type="xs:string"/>
+			<xs:element name="stadion" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="dkod" type="xs:string" use="required"/>
+	</xs:complexType>
+	
+	<xs:complexType name="resztveszTipus">
+		<xs:sequence>
+			<xs:element name="nezoszam" type="xs:int" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+		<xs:attribute name="rkod" type="xs:string" use="required"/>
+		<xs:attribute name="mkod" type="xs:string" use="required"/>
+		<xs:attribute name="dkod" type="xs:string" use="required"/>
+	</xs:complexType>
+	
+	<xs:complexType name="r-cssTipus">
+		<xs:sequence>
+			<xs:element name="r-cs" type="r-csTipus" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="r-csTipus">
+		<xs:sequence>
+			<xs:element name="gol" type="xs:int"/>
+		</xs:sequence>
+		<xs:attribute name="rkod" type="xs:string" use="required"/>
+		<xs:attribute name="cskod" type="xs:string" use="required"/>
+	</xs:complexType>
+
+</xs:schema>

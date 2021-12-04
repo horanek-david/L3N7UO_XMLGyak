@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="orarendL3N7UO.xsl"?>
+
+
+<orarend>
+	<ora id="1" tipus="eloadas">
+		<targy>Algoritmusok es vizsgalatuk</targy>
+		<idopont>
+			<nap>hetfo</nap>
+			<tol>08</tol>
+			<ig>10</ig>
+		</idopont>
+		<helyszin>XII A3 III. em. 313</helyszin>
+		<oktato>Dr. Hazy Attila</oktato>
+		<szak>Programtervezo Informatikus</szak>
+	</ora>
+	<ora id="2" tipus="gyakorlat">
+		<targy>Algoritmusok es vizsgalatuk</targy>
+		<idopont>
+			<nap>hetfo</nap>
+			<tol>10</tol>
+			<ig>12</ig>
+		</idopont>
+		<helyszin>XII A3 III. em. 313</helyszin>
+		<oktato>Dr. Hazy Attila</oktato>
+		<szak>Programtervezo Informatikus</szak>
+	</ora>
+	<ora id="3" tipus="eloadas">
+		<targy>Web technologiak 1.</targy>
+		<idopont>
+			<nap>hetfo</nap>
+			<tol>12</tol>
+			<ig>14</ig>
+		</idopont>
+		<helyszin>XXX A1 III. em. 305</helyszin>
+		<oktato>Agardi Anita</oktato>
+		<szak>Programtervezo Informatikus</szak>
+	</ora>
+	<ora id="4" tipus="eloadas">
+		<targy>Linearis Algebra numerikus modszerei</targy>
+		<idopont>
+			<nap>hetfo</nap>
+			<tol>12</tol>
+			<ig>14</ig>
+		</idopont>
+		<helyszin>XII A3 III. em. 313</helyszin>
+		<oktato>Dr. Karacsony Zsolt</oktato>
+		<szak>Programtervezo Informatikus</szak>
+	</ora>
+	<ora id="5" tipus="eloadas">
+		<targy>Mesterseges intelligencia alapok</targy>
+		<idopont>
+			<nap>hetfo</nap>
+			<tol>14</tol>
+			<ig>17</ig>
+		</idopont>
+		<helyszin>XXXII A1 magasfsz</helyszin>
+		<oktato>Dr. Dudas Laszlo</oktato>
+		<szak>Programtervező informatikus</szak>
+	</ora>
+	<ora id="6" tipus="gyakorlat">
+		<targy>Linearis Algebra numerikus modszerei</targy>
+		<idopont>
+			<nap>kedd</nap>
+			<tol>08</tol>
+			<ig>10</ig>
+		</idopont>
+		<helyszin>A1/202 A1 II. em. 202</helyszin>
+		<oktato>Dr. Karacsony Zsolt</oktato>
+		<szak>Programtervezo Informatikus</szak>
+	</ora>
+	<ora id="7" tipus="eloadas">
+		<targy>Adatkezeles XML-ben</targy>
+		<idopont>
+			<nap>kedd</nap>
+			<tol>12</tol>
+			<ig>14</ig>
+		</idopont>
+		<helyszin>I A2 fsz</helyszin>
+		<oktato>Bednarik Laszlo</oktato>
+		<szak>Programtervezo Informatikus</szak>
+	</ora>
+	<ora id="8" tipus="gyakorlat">
+		<targy>Web technologiak 1.</targy>
+		<idopont>
+			<nap>kedd</nap>
+			<tol>18</tol>
+			<ig>20</ig>
+		</idopont>
+		<helyszin>In/103 In I. em. 103</helyszin>
+		<oktato>Agardi Anita</oktato>
+		<szak>Programtervezo Informatikus</szak>
+	</ora>	
+	<ora id="9" tipus="gyakorlat">
+		<targy>Mesterseges intelligencia alapok</targy>
+		<idopont>
+			<nap>szerda</nap>
+			<tol>09</tol>
+			<ig>10</ig>
+		</idopont>
+		<helyszin>In/15 In. fsz 15</helyszin>
+		<oktato>Dr. Dudas Laszlo</oktato>
+		<szak>Programtervezo Informatikus</szak>
+	</ora>	
+	<ora id="10" tipus="gyakorlat">
+		<targy>Adatkezeles XML-ben</targy>
+		<idopont>
+			<nap>szerda</nap>
+			<tol>10</tol>
+			<ig>12</ig>
+		</idopont>
+		<helyszin>In/202 In II. em. 202</helyszin>
+		<oktato>Bednarik Laszlo</oktato>
+		<szak>Programtervezo Informatikus</szak>
+	</ora>	
+	<ora id="11" tipus="eloadas">
+		<targy>Vallalati informacios rendszerek fejlesztese</targy>
+		<idopont>
+			<nap>szerda</nap>
+			<tol>16</tol>
+			<ig>18</ig>
+		</idopont>
+		<helyszin>In/103 In I. em. 103</helyszin>
+		<oktato>Dr. Sasvari Peter Laszlo</oktato>
+		<szak>Programtervezo Informatikus</szak>
+	</ora>
+	<ora id="12" tipus="gyakorlat">
+		<targy>Vallalati informacios rendszerek fejlesztese</targy>
+		<idopont>
+			<nap>szerda</nap>
+			<tol>18</tol>
+			<ig>20</ig>
+		</idopont>
+		<helyszin>In/103 In I. em. 103</helyszin>
+		<oktato>Dr. Sasvari Peter Laszlo</oktato>
+		<szak>Programtervezo Informatikus</szak>
+	</ora>
+	<ora id="13" tipus="gyakorlat">
+		<targy>Szakmai gyakorlat</targy>
+		<idopont>
+			<nap>pentek</nap>
+			<tol>8</tol>
+			<ig>10</ig>
+		</idopont>
+		<helyszin>-</helyszin>
+		<oktato>Dr. Foldvari Attila Jozsef</oktato>
+		<szak>Programtervezo Informatikus</szak>
+	</ora>
+	<ora id="14" tipus="gyakorlat">
+		<targy>Idegen nyelv felmentett 1.</targy>
+		<idopont>
+			<nap>pentek</nap>
+			<tol>8</tol>
+			<ig>10</ig>
+		</idopont>
+		<helyszin>-</helyszin>
+		<oktato>-</oktato>
+		<szak>Programtervezo Informatikus</szak>
+	</ora>
+</orarend>

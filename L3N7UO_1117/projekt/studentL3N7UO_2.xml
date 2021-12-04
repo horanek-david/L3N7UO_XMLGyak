@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="studentL3N7UO.xsl"?>
+
+ <?xml-stylesheet type = "text/xsl" href = "studentL3N7UO_apply.xsl"?>
 
 <class>
 
@@ -8,6 +9,7 @@
 		<keresztnev>David</keresztnev>
 		<becenev>Dave</becenev>
 		<kor>21</kor>
+		<fizetes>600000</fizetes>
 	</student>
 	
 	<student id = "02">
@@ -15,6 +17,7 @@
 		<keresztnev>Adam</keresztnev>
 		<becenev>Adi</becenev>
 		<kor>21</kor>
+		<fizetes>550000</fizetes>
 	</student>
 	
 	<student id = "03">
@@ -22,6 +25,7 @@
 		<keresztnev>Balint</keresztnev>
 		<becenev>Beci</becenev>
 		<kor>20</kor>
+		<fizetes>450000</fizetes>
 	</student>
 
 </class>

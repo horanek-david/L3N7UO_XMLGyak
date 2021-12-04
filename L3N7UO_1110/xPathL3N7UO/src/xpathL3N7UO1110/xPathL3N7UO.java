@@ -39,6 +39,35 @@ public class xPathL3N7UO {
 			//1) Válassza ki az összes student element, amely a class gyermekei.
 			String expression = "/class/student";
 			
+			//2) Válassza ki azt a student elemet, amely rendelkezik "id" attribútummal és értéke "01".
+			//String expression = "//student[@id='01']";
+			
+			//3) Kiválasztja az összes student elemet, függetlenül attól, hogy hol vannak a dokumentumban.
+			//String expression = "//student";
+			
+			//4) Válassza ki a második student element, amely a class elem gyermeke.
+			//String expression = "//student[2]";
+			
+			//5) Válassza ki az utolsó student elemet, amely a class elem gyermeke.
+			//String expression = "/class/student[last()]";
+			
+			//6) Válassza ki az utolsó elõtti student elemet, amely a class elem gyermeke
+			//String expression = "/class/student[last()-1]";
+			
+			//7) Válassza ki az elsõ két student elemet, amelyek a class elem gyermekei.
+			//String expression = "/class/student[position()<3]";
+			
+			//8) Válassza ki az összes student element, amely a class gyermekei.
+			//String expression = "/class/*";
+			
+			//9) Válassza ki az összes student elemet, amely rendelkezik legalább egy bármilyen attribútummal.
+			//String expression = "//student[@*]";
+			
+			//10) Válassza ki a dokumentum összes elemét.
+			//String expression = "//*";
+			
+			//11) Válassza ki a class elem összes student elemét, amelynél a kor>20.
+			//String expression = "/class/student[kor>20]";
 			
 			
 			
@@ -46,27 +75,10 @@ public class xPathL3N7UO {
 			
 			for(int i = 0; i < nodeList.getLength(); i++) {
 				
-				//4) Válassza ki a második student element, amely a class elem gyermeke.
-				if(i==1) {
-					
-				//5) Válassza ki az utolsó student elemet, amely a class elem gyermeke.
-				//(i== nodeList.getLength()-1) {
-				
-				//6) Válassza ki az utolsó elõtti student elemet, amely a class elem gyermeke
-				//if(nodeList.getLength()>1 && i== nodeList.getLength()-2)
-						
-				//7) Válassza ki az elsõ két student elemet, amelyek a class elem gyermekei.
-				//if(i<2) {
-				
 				Node node = nodeList.item(i);
 				
 				if(node.getNodeType() == Node.ELEMENT_NODE && node.getNodeName().equals("student")) {
 					Element element = (Element) node;
-					
-					
-					
-					//2) Válassza ki azt a student elemet, amely rendelkezik "id" attribútummal és értéke "01".
-					//if(element.getAttribute("id").equals("01")) {
 					
 					System.out.println("\nAktuális elem: " + node.getNodeName());
 						 
@@ -78,7 +90,7 @@ public class xPathL3N7UO {
 				
 					}
 				}
-			} 
+			//} 
 		}catch(ParserConfigurationException e) {
 			e.printStackTrace();
 		}catch(SAXException e) {

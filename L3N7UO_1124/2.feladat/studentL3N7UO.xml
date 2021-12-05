@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ <?xml-stylesheet type = "text/xsl" href = "studentL3N7UO_choose.xsl"?>
+
+<class>
+
+	<student id = "01">
+		<vezeteknev>Horanek</vezeteknev>
+		<keresztnev>David</keresztnev>
+		<becenev>Dave</becenev>
+		<kor>21</kor>
+		<fizetes>600000</fizetes>
+	</student>
+	
+	<student id = "02">
+		<vezeteknev>Otvos</vezeteknev>
+		<keresztnev>Adam</keresztnev>
+		<becenev>Adi</becenev>
+		<kor>21</kor>
+		<fizetes>550000</fizetes>
+	</student>
+	
+	<student id = "03">
+		<vezeteknev>Bartfai</vezeteknev>
+		<keresztnev>Balint</keresztnev>
+		<becenev>Beci</becenev>
+		<kor>20</kor>
+		<fizetes>450000</fizetes>
+	</student>
+
+</class>

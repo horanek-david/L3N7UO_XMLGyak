@@ -1,0 +1,21 @@
+<html>
+   <h2>Rendszamok:</h2>
+   <table border="1">
+      <tr bgcolor="#9acd32">
+         <th>Tipus</th>
+         <th>Peldanyszam</th>
+      </tr>
+      <tr>
+         <td> Opel :</td>
+         <td>2</td>
+      </tr>
+      <tr>
+         <td> Fiat :</td>
+         <td>1</td>
+      </tr>
+      <tr>
+         <td> Skoda :</td>
+         <td>1</td>
+      </tr>
+   </table>
+</html>

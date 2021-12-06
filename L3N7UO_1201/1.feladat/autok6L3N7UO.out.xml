@@ -1,0 +1,19 @@
+<html>
+   <table border="1">
+      <tr bgcolor="#9acd32">
+         <th>Varos</th>
+         <th>Auto peldanyszama</th>
+         <th>Ossz ar</th>
+      </tr>
+      <tr>
+         <td>Eger:</td>
+         <td>1</td>
+         <td>21233</td>
+      </tr>
+      <tr>
+         <td>Miskolc:</td>
+         <td>3</td>
+         <td>96699</td>
+      </tr>
+   </table>
+</html>

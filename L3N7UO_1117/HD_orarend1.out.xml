@@ -1,0 +1,52 @@
+<html>
+    <body>
+        <h2>Orarend</h2>
+        <table border="1">
+            <tr bgcolor="#9acd32">
+                <th>ID</th><th>Tipus</th><th>Targy</th><th>Idopont</th><th>Helyszin</th><th>Oktato</th><th>Szak</th>
+            </tr>
+            <tr>
+                <td>1</td><td>eloadas</td><td>Algoritmusok es vizsgalatuk</td><td>hetfo-08:00-10:00-ig</td><td>XII A3 III. em. 313</td><td>Dr. Hazy Attila</td><td>Programtervezo Informatikus</td>
+            </tr>
+            <tr>
+                <td>2</td><td>gyakorlat</td><td>Algoritmusok es vizsgalatuk</td><td>hetfo-10:00-12:00-ig</td><td>XII A3 III. em. 313</td><td>Dr. Hazy Attila</td><td>Programtervezo Informatikus</td>
+            </tr>
+            <tr>
+                <td>3</td><td>eloadas</td><td>Web technologiak 1.</td><td>hetfo-12:00-14:00-ig</td><td>XXX A1 III. em. 305</td><td>Agardi Anita</td><td>Programtervezo Informatikus</td>
+            </tr>
+            <tr>
+                <td>4</td><td>eloadas</td><td>Linearis Algebra numerikus modszerei</td><td>hetfo-12:00-14:00-ig</td><td>XII A3 III. em. 313</td><td>Dr. Karacsony Zsolt</td><td>Programtervezo Informatikus</td>
+            </tr>
+            <tr>
+                <td>5</td><td>eloadas</td><td>Mesterseges intelligencia alapok</td><td>hetfo-14:00-17:00-ig</td><td>XXXII A1 magasfsz</td><td>Dr. Dudas Laszlo</td><td>Programtervező informatikus</td>
+            </tr>
+            <tr>
+                <td>6</td><td>gyakorlat</td><td>Linearis Algebra numerikus modszerei</td><td>kedd-08:00-10:00-ig</td><td>A1/202 A1 II. em. 202</td><td>Dr. Karacsony Zsolt</td><td>Programtervezo Informatikus</td>
+            </tr>
+            <tr>
+                <td>7</td><td>eloadas</td><td>Adatkezeles XML-ben</td><td>kedd-12:00-14:00-ig</td><td>I A2 fsz</td><td>Bednarik Laszlo</td><td>Programtervezo Informatikus</td>
+            </tr>
+            <tr>
+                <td>8</td><td>gyakorlat</td><td>Web technologiak 1.</td><td>kedd-18:00-20:00-ig</td><td>In/103 In I. em. 103</td><td>Agardi Anita</td><td>Programtervezo Informatikus</td>
+            </tr>
+            <tr>
+                <td>9</td><td>gyakorlat</td><td>Mesterseges intelligencia alapok</td><td>szerda-09:00-10:00-ig</td><td>In/15 In. fsz 15</td><td>Dr. Dudas Laszlo</td><td>Programtervezo Informatikus</td>
+            </tr>
+            <tr>
+                <td>10</td><td>gyakorlat</td><td>Adatkezeles XML-ben</td><td>szerda-10:00-12:00-ig</td><td>In/202 In II. em. 202</td><td>Bednarik Laszlo</td><td>Programtervezo Informatikus</td>
+            </tr>
+            <tr>
+                <td>11</td><td>eloadas</td><td>Vallalati informacios rendszerek fejlesztese</td><td>szerda-16:00-18:00-ig</td><td>In/103 In I. em. 103</td><td>Dr. Sasvari Peter Laszlo</td><td>Programtervezo Informatikus</td>
+            </tr>
+            <tr>
+                <td>12</td><td>gyakorlat</td><td>Vallalati informacios rendszerek fejlesztese</td><td>szerda-18:00-20:00-ig</td><td>In/103 In I. em. 103</td><td>Dr. Sasvari Peter Laszlo</td><td>Programtervezo Informatikus</td>
+            </tr>
+            <tr>
+                <td>13</td><td>gyakorlat</td><td>Szakmai gyakorlat</td><td>pentek-8:00-10:00-ig</td><td>-</td><td>Dr. Foldvari Attila Jozsef</td><td>Programtervezo Informatikus</td>
+            </tr>
+            <tr>
+                <td>14</td><td>gyakorlat</td><td>Idegen nyelv felmentett 1.</td><td>pentek-8:00-10:00-ig</td><td>-</td><td>-</td><td>Programtervezo Informatikus</td>
+            </tr>
+        </table>
+    </body>
+</html>
